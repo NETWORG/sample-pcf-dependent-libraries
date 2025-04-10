@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e4b31312-bc06-432a-8e55-7d5f10a35394}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{0761a74e-7c99-4444-8707-f179acb8e358}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{9d151938-b7b1-4119-b102-cdc262343bbd}">
+                  <labels>
+                    <label description="Pás barev" languagecode="1029" />
+                    <label description="ColorStrip" languagecode="1033" />
+                  </labels>
+                </section>
+              </sections>
+            </column>
+            <column width="75%">
+              <sections>
+                <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{0f5d484c-dced-44f6-8dbe-bf416f9fb829}" IsUserDefined="0">
+                  <labels>
+                    <label description="Záhlaví" languagecode="1029" />
+                    <label description="Header" languagecode="1033" />
+                    <label description="Nagłówek" languagecode="1045" />
+                    <label description="Заголовок" languagecode="1049" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5076e17b-6d20-441a-9947-dbb7e2a00780}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                      <cell id="{4dc3d286-c41a-4722-a82a-337c76e0a431}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b65a2d70-1901-4182-b8ea-1ec03b9d1f76}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{bdfbe6b8-88cd-42b2-b8ab-27f05b667fdf}" IsUserDefined="0">
+                  <labels>
+                    <label description="Podrobnosti" languagecode="1029" />
+                    <label description="Details" languagecode="1033" />
+                    <label description="Szczegóły" languagecode="1045" />
+                    <label description="Подробности" languagecode="1049" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1aecf33c-20f3-4826-83a0-912bd2490762}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="hajekj_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hajekj_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{b8411856-13e7-4246-bc4d-22936732f3ae}" IsUserDefined="0">
+                  <labels>
+                    <label description="Zápatí" languagecode="1029" />
+                    <label description="Footer" languagecode="1033" />
+                    <label description="Stopka" languagecode="1045" />
+                    <label description="Нижний колонтитул" languagecode="1049" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3661299b-51ff-4352-aa59-a55f4f7431eb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{a3b59d36-fdb9-4793-a07a-e6d31ee9c5ab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{438bfe1b-1c04-42ec-9e3a-4d3f3371135b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c68fe57b-205a-4d8e-b2ab-ee190f481c82}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A card form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{a08eb031-47d2-45e6-a03c-66fb518a1eba}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{98f152fa-7795-4a8d-b109-671d43a5e5d2}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1ba22f74-d11b-48b5-8a70-c2dc4b5034b4}">
+                  <labels>
+                    <label description="OBECNÉ" languagecode="1029" />
+                    <label description="GENERAL" languagecode="1033" />
+                    <label description="OGÓLNE" languagecode="1045" />
+                    <label description="ОБЩИЕ" languagecode="1049" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ebb74cd8-2f16-4b91-836f-ecc0024fcbb6}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="hajekj_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hajekj_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15e6d308-dbf6-4ad0-b26f-7e31f8f4b61f}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Vlastník" languagecode="1029" />
+                          <label description="Ответственный" languagecode="1049" />
+                          <label description="Właściciel" languagecode="1045" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

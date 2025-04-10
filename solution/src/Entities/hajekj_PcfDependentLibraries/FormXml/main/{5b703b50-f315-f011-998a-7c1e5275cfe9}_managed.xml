@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5b703b50-f315-f011-998a-7c1e5275cfe9}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{2d14bafd-80a8-4107-be8d-c8ad7ef9ee41}" IsUserDefined="1" labelid="{d8c3ec8b-c45c-4df4-87e4-a291eaec9cd1}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f38e4121-9e8d-4801-95b9-2867672ea5f7}" labelid="{7a582d20-7128-46e5-8a7e-1e54dd8d380b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{45bf77c1-7614-4d4f-b046-76db5094977d}" labelid="{6aec9c0e-8f91-4e3f-a00c-4413bd54bb32}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="hajekj_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hajekj_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ee1b53bf-3815-41c5-b705-76f21bc281c5}" locklevel="0" colspan="1" rowspan="1" labelid="{24a6c65e-c020-4d72-a854-a38998378e71}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="hajekj_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="hajekj_name" disabled="false" uniqueid="{6997d017-aa77-42fb-81de-e5ca38cf9b28}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48f6942f-e2de-4fc6-a47d-0f2a22a6eece}" labelid="{57969018-f9e3-4b29-b16a-33943dfa0ab5}">
+                        <labels>
+                          <label description="Vlastník" languagecode="1029" />
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Właściciel" languagecode="1045" />
+                          <label description="Ответственный" languagecode="1049" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{96badbe9-97aa-4d7d-a93b-ac66cf8fbd21}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1b889597-981c-4d51-a6cb-df4c448d5a5c}" showlabel="false" labelid="{0a79463c-5700-40ae-acf6-2ef220bcd257}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f00b154a-1310-4409-b44f-99457e64e486}" showlabel="false" labelid="{daf41736-acc0-4784-8ba9-780944758805}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{15de92f1-c813-4e91-b100-c4eaf4847f3d}" showlabel="false" labelid="{7503101a-bf2f-44b4-8af6-8922620394de}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{9080c19a-169e-4f6b-b32e-e9eaf3b01136}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7803444f-d75f-47a4-a7af-d1321582c17d}" showlabel="false" labelid="{4b1cac64-255c-4261-b212-922c5af5cdaa}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7f0416ee-82ca-4b46-aa13-3e33f8713f9b}" showlabel="false" labelid="{65ef6438-cc93-4b67-b59f-4283669187d5}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c71509f6-5ca4-4a98-8129-6c2bc92cab6c}" showlabel="false" labelid="{4ff9f762-dfe5-490f-a2ce-c39e92886d7c}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{6997d017-aa77-42fb-81de-e5ca38cf9b28}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>hajekj_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="hajekj_hajekj.DependentLibraries.WithDependencyAsync">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">hajekj_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="hajekj_hajekj.DependentLibraries.WithDependencyAsync">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">hajekj_name</sampleProperty>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="hajekj_hajekj.DependentLibraries.WithDependencyAsync">
+            <parameters>
+              <sampleProperty type="SingleLine.Text">hajekj_name</sampleProperty>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="DependentPcfAsync" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

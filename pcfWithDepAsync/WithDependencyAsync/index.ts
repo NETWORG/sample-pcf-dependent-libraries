@@ -62,7 +62,7 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
     }
 
     private async handleButtonClick() {
-        const loadedControl = await this.context.utils.loadDependency?.("samples_SampleNamespace.StubLibrary");
+        const loadedControl = await this.context.utils.loadDependency?.("samples_SampleNamespace.DependentLibrary");
         if (loadedControl) {
             const lib1 = new window.lib1();
             const lib2 = new window.lib2();

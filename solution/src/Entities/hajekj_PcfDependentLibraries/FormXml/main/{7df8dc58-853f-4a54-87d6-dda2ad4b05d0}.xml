@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7df8dc58-853f-4a54-87d6-dda2ad4b05d0}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{2d14bafd-80a8-4107-be8d-c8ad7ef9ee41}" IsUserDefined="1">
+          <labels>
+            <label description="Obecné" languagecode="1029" />
+            <label description="General" languagecode="1033" />
+            <label description="Ogólne" languagecode="1045" />
+            <label description="Общие сведения" languagecode="1049" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f38e4121-9e8d-4801-95b9-2867672ea5f7}">
+                  <labels>
+                    <label description="Obecné" languagecode="1029" />
+                    <label description="General" languagecode="1033" />
+                    <label description="Ogólne" languagecode="1045" />
+                    <label description="Общие сведения" languagecode="1049" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{45bf77c1-7614-4d4f-b046-76db5094977d}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="hajekj_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="hajekj_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48f6942f-e2de-4fc6-a47d-0f2a22a6eece}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Vlastník" languagecode="1029" />
+                          <label description="Ответственный" languagecode="1049" />
+                          <label description="Właściciel" languagecode="1045" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

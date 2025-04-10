@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25032.214" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.25032.00214">
   <Entities />
   <Roles />
   <Workflows />
@@ -10,9 +10,54 @@
   <OrganizationSettings />
   <optionsets />
   <CustomControls />
-  <SolutionPluginAssemblies />
+  <AppModuleSiteMaps />
+  <AppModules />
   <EntityDataProviders />
   <Languages>
     <Language>1033</Language>
+    <Language>1029</Language>
+    <Language>1025</Language>
+    <Language>1069</Language>
+    <Language>1026</Language>
+    <Language>1027</Language>
+    <Language>3076</Language>
+    <Language>2052</Language>
+    <Language>1028</Language>
+    <Language>1043</Language>
+    <Language>1061</Language>
+    <Language>1035</Language>
+    <Language>1036</Language>
+    <Language>1053</Language>
+    <Language>3098</Language>
+    <Language>2074</Language>
+    <Language>1030</Language>
+    <Language>1050</Language>
+    <Language>1110</Language>
+    <Language>1031</Language>
+    <Language>1032</Language>
+    <Language>1054</Language>
+    <Language>1055</Language>
+    <Language>1058</Language>
+    <Language>1051</Language>
+    <Language>1060</Language>
+    <Language>3082</Language>
+    <Language>1044</Language>
+    <Language>1037</Language>
+    <Language>1081</Language>
+    <Language>1057</Language>
+    <Language>1040</Language>
+    <Language>1046</Language>
+    <Language>2070</Language>
+    <Language>1049</Language>
+    <Language>1038</Language>
+    <Language>1041</Language>
+    <Language>1087</Language>
+    <Language>1042</Language>
+    <Language>1062</Language>
+    <Language>1063</Language>
+    <Language>1086</Language>
+    <Language>1045</Language>
+    <Language>1048</Language>
+    <Language>1066</Language>
   </Languages>
 </ImportExportXml>
