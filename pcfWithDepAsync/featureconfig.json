@@ -1,0 +1,4 @@
+{
+    "pcfResourceDependency": "on",
+    "pcfAllowCustomWebpack": "on" 
+}
