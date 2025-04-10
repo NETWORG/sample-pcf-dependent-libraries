@@ -16,6 +16,7 @@ export class DependentLibrary implements ComponentFramework.StandardControl<IInp
      */
     constructor() {
         // Empty
+        console.log("DependentLibrary constructor called");
     }
 
     /**
@@ -58,6 +59,7 @@ export class DependentLibrary implements ComponentFramework.StandardControl<IInp
      */
     public destroy(): void {
         // Add code to cleanup control if necessary
+        console.log("DependentLibrary destroy called");
     }
 }
 

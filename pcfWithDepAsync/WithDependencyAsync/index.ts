@@ -3,14 +3,14 @@ import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import * as clientLibraries from '@talxis/client-libraries';
 
 interface Lib1 {
-    doSomething(): void;
+    doSomething(): string;
 }
 interface ILib1 {
     // eslint-disable-next-line @typescript-eslint/prefer-function-type
     new(): Lib1;
 }
 interface Lib2 {
-    doSomethingElse(): void;
+    doSomethingElse(): string;
 }
 interface ILib2 {
     // eslint-disable-next-line @typescript-eslint/prefer-function-type
@@ -27,6 +27,7 @@ declare const window: ICustomWindow;
 export class WithDependencyAsync implements ComponentFramework.StandardControl<IInputs, IOutputs> {
     private notifyOutputChanged: () => void;
     private context: ComponentFramework.Context<IInputs>;
+    private container: HTMLDivElement;
     
     /**
      * Empty constructor.
@@ -50,6 +51,7 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
         container: HTMLDivElement
     ): void {
         // Add control initialization code
+        this.container = container;
         this.notifyOutputChanged = notifyOutputChanged;
         this.context = context;
 
@@ -59,22 +61,31 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
         button.onclick = () => {
             this.handleButtonClick();
         };
-        container.appendChild(button);
+        this.container.appendChild(button);
     }
 
     private async handleButtonClick() {
         const loadedControl = await this.context.utils.loadDependency?.("hajekj_hajekj.DependentLibraries.DependentLibrary");
         if (loadedControl) {
             const lib1 = new window.lib1();
-            const lib2 = new window.lib2();
-            lib1.doSomething();
-            lib2.doSomethingElse();
+            const lib1Result = lib1.doSomething();
+            this.log(`lib1 result: ${lib1Result}`);
 
-            (async function() {
+            const lib2 = new window.lib2();
+            const lib2Result = lib2.doSomethingElse();
+            this.log(`lib2 result: ${lib2Result}`);
+
+            (async function(log: (message: string) => void) {
                 // You need to explicitly call it through window.* otherwise the PCF will not load at all, because the load will crash with missing import
-                console.log("async call from @talxis/client-libraries", await window.clientLibraries.getTenantId());
-            })();
+                const tenantId = await window.clientLibraries.getTenantId();
+                log(`async call to @talxis/client-libraries: ${tenantId}`);
+            })(this.log);
         }
+    }
+
+    private log(message: string) {
+        console.log(message);
+        this.container.appendChild(document.createTextNode(message));
     }
 
 

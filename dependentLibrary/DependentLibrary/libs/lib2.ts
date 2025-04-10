@@ -3,6 +3,6 @@ export default class Lib2 {
         console.log('Lib2 initialized');
     }
     public doSomethingElse() {
-        console.log('Lib2 is doing something else');
+        return 'Lib2 is doing something else';
     }
 }
