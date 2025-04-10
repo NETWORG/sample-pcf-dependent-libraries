@@ -1,4 +1,5 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
+// Importing this only for types
 import * as clientLibraries from '@talxis/client-libraries';
 
 interface Lib1 {
@@ -62,7 +63,7 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
     }
 
     private async handleButtonClick() {
-        const loadedControl = await this.context.utils.loadDependency?.("samples_SampleNamespace.DependentLibrary");
+        const loadedControl = await this.context.utils.loadDependency?.("hajekj_hajekj.DependentLibraries.DependentLibrary");
         if (loadedControl) {
             const lib1 = new window.lib1();
             const lib2 = new window.lib2();
@@ -70,7 +71,8 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
             lib2.doSomethingElse();
 
             (async function() {
-                console.log("async call from @talxis/client-libraries", await clientLibraries.getTenantId());
+                // You need to explicitly call it through window.* otherwise the PCF will not load at all, because the load will crash with missing import
+                console.log("async call from @talxis/client-libraries", await window.clientLibraries.getTenantId());
             })();
         }
     }

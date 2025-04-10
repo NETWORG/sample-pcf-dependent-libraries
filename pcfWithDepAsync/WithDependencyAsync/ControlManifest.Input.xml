@@ -35,8 +35,8 @@
       <uses-feature name="Utility" required="true" />
     </feature-usage>
     <resources>
-      <dependency type="control" name="hajekj_hajekj.DependentLibraries.DependentLibrary" load-type="onDemand" order="1" />
-      <code path="index.ts" order="2" />
+      <code path="index.ts" order="1" />
+      <dependency type="control" name="hajekj_hajekj.DependentLibraries.DependentLibrary" load-type="onDemand" />
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/SampleControl.css" order="1" />
       <resx path="strings/SampleControl.1033.resx" version="1.0.0" />
