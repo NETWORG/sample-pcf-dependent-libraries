@@ -79,13 +79,15 @@ export class WithDependencyAsync implements ComponentFramework.StandardControl<I
                 // You need to explicitly call it through window.* otherwise the PCF will not load at all, because the load will crash with missing import
                 const tenantId = await window.clientLibraries.getTenantId();
                 log(`async call to @talxis/client-libraries: ${tenantId}`);
-            })(this.log);
+            })(this.log.bind(this));
         }
     }
 
     private log(message: string) {
         console.log(message);
-        this.container.appendChild(document.createTextNode(message));
+        const logElement = document.createElement("div");
+        logElement.innerText = message;
+        this.container.appendChild(logElement);
     }
 
 
